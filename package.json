@@ -1,0 +1,31 @@
+{
+  "name": "skew-html-design",
+  "version": "1.0.0",
+  "description": "skew asymmetric design pure html css",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morganpizzini/skew-html-design.git"
+  },
+  "keywords": [
+    "skew",
+    "asymmetric",
+    "design",
+    "html5",
+    "css3"
+  ],
+  "author": "Morgan Pizzini <morgan.pizzini@hotmail.com> (https://twitter.com/MorganWPi)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/morganpizzini/skew-html-design/issues"
+  },
+  "homepage": "https://github.com/morganpizzini/skew-html-design#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.2.1"
+  }
+}

@@ -1,0 +1,81 @@
+@import '_variables';
+
+h1 {
+  margin: 0;
+  padding: 100px 0;
+  font: 44px;
+  color: white;
+  text-align: center;
+}
+.bg-orange{
+    background-image: $gradient-orange;
+}
+.bg-green{
+    background-image: $gradient-green;
+}
+.bg-black{
+    background-image: $gradient-black;
+}
+.font-white{
+  color: white;
+}
+.text-center{
+  text-align: center;
+}
+.bg-white{
+    background-image: none;
+    background-color: #FFF;
+    h1 {
+      color: black;
+    }
+}
+
+header {
+  position: relative;
+  min-height: $min-height;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - #{$skewdeg})
+  );
+  /* change the calc height to a percentage height to get alternate responsive behavior*/
+}
+
+section {
+  position: relative;
+  margin-top: -$skewdeg;
+  min-height: $min-height;
+  &.skew{
+    clip-path: polygon(
+      0 $skewdeg,
+      100% 0,
+      100% 100%,
+      0 calc(100% - #{$skewdeg})
+    );
+    &.reverse{
+      clip-path: polygon(
+        0 0,
+        100% $skewdeg,
+        100% calc(100% - #{$skewdeg}),
+        0 100%
+      );
+      &.skew-footer{
+        clip-path: polygon(
+          0 0,
+          100% $skewdeg,
+          100% 100%,
+          0 100%
+        );
+      }
+    }
+    &.skew-footer{
+      clip-path: polygon(
+        0 $skewdeg,
+        100% 0,
+        100% 100%,
+        0 100%
+      );
+    }
+  }
+}
