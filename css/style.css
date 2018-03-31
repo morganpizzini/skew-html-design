@@ -1,0 +1,46 @@
+h1 {
+  margin: 0;
+  padding: 100px 0;
+  font: 44px;
+  color: white;
+  text-align: center; }
+
+.bg-orange {
+  background-image: linear-gradient(#ff9d2f, #ff6126); }
+
+.bg-green {
+  background-image: linear-gradient(#65b16e, #043322); }
+
+.bg-black {
+  background-image: linear-gradient(135deg, #777, #111); }
+
+.font-white {
+  color: white; }
+
+.text-center {
+  text-align: center; }
+
+.bg-white {
+  background-image: none;
+  background-color: #FFF; }
+  .bg-white h1 {
+    color: black; }
+
+header {
+  position: relative;
+  min-height: 300px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
+  /* change the calc height to a percentage height to get alternate responsive behavior*/ }
+
+section {
+  position: relative;
+  margin-top: -5vw;
+  min-height: 300px; }
+  section.skew {
+    clip-path: polygon(0 5vw, 100% 0, 100% 100%, 0 calc(100% - 5vw)); }
+    section.skew.reverse {
+      clip-path: polygon(0 0, 100% 5vw, 100% calc(100% - 5vw), 0 100%); }
+      section.skew.reverse.skew-footer {
+        clip-path: polygon(0 0, 100% 5vw, 100% 100%, 0 100%); }
+    section.skew.skew-footer {
+      clip-path: polygon(0 5vw, 100% 0, 100% 100%, 0 100%); }
